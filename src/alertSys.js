@@ -23,5 +23,6 @@ function getAlerts(patientId) {
 }
 
 module.exports = {
-    generateAlert, getAlerts
+    generateAlert, 
+    getAlerts
 }

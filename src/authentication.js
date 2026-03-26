@@ -8,6 +8,14 @@ function registerUser(username, password, role = "patient") {
         throw new Error("Username and password are required");
     }
 
+    if(password.length > 50) {
+        throw new Error("Password cannot be over 50 characters");
+    }
+
+    if(password.length < 8) {
+        throw new Error("Password must be greater than 8 characters");
+    }
+
     //if username already exists, throw error
     if (users[username]) {
         throw new Error("Username already exists");
@@ -46,4 +54,8 @@ function getUser(username) {
 }
 
 //exports functions for tests.
-module.exports = { registerUser, loginUser, getUser };
+module.exports = { 
+    registerUser, 
+    loginUser, 
+    getUser 
+};

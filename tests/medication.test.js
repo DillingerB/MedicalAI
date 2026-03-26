@@ -27,4 +27,4 @@ test("everything works, with frequency date", () => {
     expect(med.dosage).toBe("150mg");
     expect(med.frequencyLabel).toBe("Weekly");
     expect(med.frequencyHours).toBeNull();
-})
+});
