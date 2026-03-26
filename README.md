@@ -9,3 +9,6 @@ I just ran a seperate test on my other device to see if transfering files works,
 I am happy to answer questions you guys might have with how this works/runs, but my comments should help understand what is going on.
 
 Yes I am writing this at about 6:45AM EXACTLY (crazy), but again, here to help best I can, if you feel the need to tweak things, go ahead. If the code breaks there is litterally a blame button for that.
+
+DO NOT TOUCH PACKAGE.JSON!!!!!
+It is just so you can run the tests, it is not for writing tests. only edit/add in test folder or in the src.
