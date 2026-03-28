@@ -3,7 +3,7 @@ const alerts = [];
 //Makes alert
 function generateAlert(patientId, interaction) {
 
-    //if there is no concerning interaction, alert will not scream at you that you about to die.
+    //if there is no concerning interaction, alert will not pop up.
     if (!interaction) return null;
 
     const alert = {
@@ -22,6 +22,7 @@ function getAlerts(patientId) {
     return alerts.filter(a => a.patientId === patientId);
 }
 
+//export function for tests
 module.exports = {
     generateAlert, getAlerts
 }

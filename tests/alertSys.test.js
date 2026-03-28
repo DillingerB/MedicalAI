@@ -1,7 +1,6 @@
-//NOTE: Tylenol does not cause Autism, just makes it stronger.
-
 const { generateAlert, getAlerts } = require("/src/alertSys.js");
 
+//happy test cases
 test("Should generate alert", () => {
     const interaction = {
         drugs: ["Tylenol", "Ibuprofen"],
@@ -24,6 +23,7 @@ test("should store alert for patient", () => {
   expect(alerts.length).toBe(1);
 });
 
+//"sad" test case (because no severity)
 test("should return null if no interaction", () => {
   const alert = generateAlert(1, null);
   expect(alert).toBeNull();

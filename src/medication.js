@@ -17,13 +17,11 @@ function addMedication(patientId, name, dosage, frequencyLabel, frequencyHours) 
         throw new Error("Hours must be positive");
     }
 
-
     //sets patient ID to null if none is given.
     if (!patientMedications[patientId]) {
         patientMedications[patientId] = [];
     }
 
-    //screaming in french
     //this shows in what order we need to make the test cases.
     const med = {name, dosage, frequencyLabel: frequencyLabel || null, frequencyHours: frequencyHours || null};
     patientMedications[patientId].push(med);
@@ -31,11 +29,13 @@ function addMedication(patientId, name, dosage, frequencyLabel, frequencyHours) 
     return med;
 }
 
-//this gets the patient ID, currently too tired/lazy to make one right now, if you wanna make one be my guess, but if not IDC.
+//this gets the patient ID
+//currently does nothing and is set here for future backend when emplementing database to code.
 function getPatientMedications(patientId) {
     return patientMedications[patientId] || [];
 }
 
+//This is exporting functions for test cases.
 module.exports = {
     addMedication,
     getPatientMedications

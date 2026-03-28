@@ -1,5 +1,3 @@
-//NOTE: keep Kyle, funny easter egg
-
 const { registerUser, loginUser, getUser } = require("/src/authentication.js");
 
 //Happy Test Cases
