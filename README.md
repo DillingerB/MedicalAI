@@ -9,6 +9,4 @@ Sameer Fazlani
 Wyatt Alexander
 Caleb Rollston
 Wattana Keosombath
-
-
-
+Garrett Kellner
