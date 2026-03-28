@@ -1,6 +1,3 @@
-//NOTE: Change part of names for drugs, they are the non-perscribed kind
-//2nd (note to self) get more sleep.
-
 const { addMedication } = require("/src/medication.js");
 
 //happy test case
@@ -11,8 +8,8 @@ test("should add medicaiton with frequencyHours", () => {
 });
 
 test("everything works, with frequency date", () => {
-    const med = addMedication(4, "Meth", "150mg", "Weekly", null);
-    expect(med.name).toBe("Meth");
+    const med = addMedication(4, "Ibuprofen", "150mg", "Weekly", null);
+    expect(med.name).toBe("Ibuprofen");
     expect(med.dosage).toBe("150mg");
     expect(med.frequencyLabel).toBe("Weekly");
     expect(med.frequencyHours).toBeNull();
@@ -26,13 +23,4 @@ test("should throw an error due to no frequency", () => {
 
 test("throw error for no name", () => {
     expect(() => addMedication(3, "200mg", "Morning", null)).toThrow;
-});
-
-//except this, this it another happy test case to test EVERYTHING
-test("everything works, with frequency date", () => {
-    const med = addMedication(4,"Aspirin", "150mg", "Weekly", null);
-    expect(med.name).toBe("Aspirin");
-    expect(med.dosage).toBe("150mg");
-    expect(med.frequencyLabel).toBe("Weekly");
-    expect(med.frequencyHours).toBeNull();
 });

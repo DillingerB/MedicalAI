@@ -8,10 +8,12 @@ function registerUser(username, password, role = "patient") {
         throw new Error("Username and password are required");
     }
 
+    //throw error if passwords length is greater than 50 characters
     if(password.length > 50) {
         throw new Error("Password cannot be over 50 characters");
     }
 
+    //throw error if password is less than 8 characters
     if(password.length < 8) {
         throw new Error("Password must be greater than 8 characters");
     }

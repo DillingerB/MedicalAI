@@ -34,5 +34,8 @@ test("Password too short", () => {
 });
 
 test("Password too long", () => {
-  expect(() => registerUser("Tommy", "1234567890qwertyuioplkjhgfdsazxcvbnmmnbvcxzasdfghjklpoiuytrewq12345678900987654321qwertyuioplkjhgfdsazxcvbnm")).toThrow("Password cannot be over 50 characters")
+  expect(() => registerUser(
+    "Tommy", 
+    "1234567890qwertyuioplkjhgfdsazxcvbnmmnbvcxzasdfghjklpoiuytrewq12345678900987654321qwertyuioplkjhgfdsazxcvbnm"
+  )).toThrow("Password cannot be over 50 characters")
 });
