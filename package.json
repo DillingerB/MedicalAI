@@ -1,8 +1,3 @@
-/* DO NOT TOUCH THIS FILE, PROGRAM WILL NOT RUN*/
-/* For this program to work properly, you must download node.js, then type these commands in your terminal so you too can test this code.*/
-/*1. npm init -y  2. npm install jest  3. (running test) npm test*/
-/*because you will already have the package file, I believe you can skil the init, but be safe, do it anyways. ok I going to sleep, it's like 6AM*/
-
 {
   "name": "medical-ai",
   "version": "1.0.0",
