@@ -18,9 +18,9 @@ test("everything works, with frequency date", () => {
 //sad test cases
 test("should throw an error due to no frequency", () => {
     expect(() =>
-        addMedication(2, "Ibprofin", "1000mg", null, null)).toThrow;
+        addMedication(2, "Ibprofin", "1000mg", null, null)).toThrow("Provide either Date OR Hours, not both");
 });
 
 test("throw error for no name", () => {
-    expect(() => addMedication(3, "200mg", "Morning", null)).toThrow;
+    expect(() => addMedication(3, "", "200mg", "Morning", null)).toThrow("Medication name required");
 });

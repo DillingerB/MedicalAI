@@ -23,7 +23,8 @@ test("should store alert for patient", () => {
   expect(alerts.length).toBe(1);
 });
 
-//"sad" test case (because no severity)
+//this can count as a "sad" case, but it really is saying that there is no interaction,
+//meaning nothing bad has currently been reported.
 test("should return null if no interaction", () => {
   const alert = generateAlert(1, null);
   expect(alert).toBeNull();
