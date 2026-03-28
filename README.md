@@ -6,7 +6,7 @@ Package.json file there so you can run the npm test command, please disregad the
 GROUP MEMBERS:
 Dillinger Bennett
 Sameer Fazlani
-
+Wyatt Alexander
 
 
 
