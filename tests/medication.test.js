@@ -21,9 +21,18 @@ test("everything works, with frequency date", () => {
 //sad test cases
 test("should throw an error due to no frequency", () => {
     expect(() =>
-        addMedication(2, "Cocaine", "1000mg", null, null)).toThrow;
+        addMedication(2, "Ibprofin", "1000mg", null, null)).toThrow;
 });
 
 test("throw error for no name", () => {
     expect(() => addMedication(3, "200mg", "Morning", null)).toThrow;
+});
+
+//except this, this it another happy test case to test EVERYTHING
+test("everything works, with frequency date", () => {
+    const med = addMedication(4,"Aspirin", "150mg", "Weekly", null);
+    expect(med.name).toBe("Aspirin");
+    expect(med.dosage).toBe("150mg");
+    expect(med.frequencyLabel).toBe("Weekly");
+    expect(med.frequencyHours).toBeNull();
 });
