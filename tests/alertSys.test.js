@@ -1,3 +1,12 @@
+/**
+ * GROUP MEMBERS:
+ * Dillinger Bennett
+ * Sameer Fazlani
+ * Wyatt Alexander
+ * Caleb Rollston
+ * Wattana Keosombath
+ * Garrett Kellner
+ */
 const { generateAlert, getAlerts } = require("/src/alertSys.js");
 
 //happy test cases

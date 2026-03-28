@@ -1,3 +1,12 @@
+/**
+ * GROUP MEMBERS:
+ * Dillinger Bennett
+ * Sameer Fazlani
+ * Wyatt Alexander
+ * Caleb Rollston
+ * Wattana Keosombath
+ * Garrett Kellner
+ */
 const patientMedications = {};
 
 function addMedication(patientId, name, dosage, frequencyLabel, frequencyHours) {
